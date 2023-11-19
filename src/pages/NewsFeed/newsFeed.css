@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.book {
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.book-container {
+  box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.book__title,
+.book__author {
+  cursor: pointer;
+}
+
+.book__pub,
+.book__contetn {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+  .book {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .book {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
